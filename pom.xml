@@ -19,7 +19,12 @@
         <ch.qos.logback.version>1.2.3</ch.qos.logback.version>
         <org.slf4j.version>1.7.9</org.slf4j.version>
         <junit.junit.version>4.12</junit.junit.version>
+        <org.openjdk.jmh.version>1.21</org.openjdk.jmh.version>
         <org.projectlombok.version>1.18.0</org.projectlombok.version>
+        <io.reactivex.rxjava2.version>2.2.6</io.reactivex.rxjava2.version>
+        <com.googlecode.disruptor.version>2.10.4</com.googlecode.disruptor.version>
+        <org.jctools.version>2.1.2</org.jctools.version>
+        <com.alibaba.fastjson.version>1.2.56</com.alibaba.fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -80,12 +85,53 @@
                 <version>${org.springframework.version}</version>
             </dependency>
 
+            <!--jmh-->
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${org.openjdk.jmh.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${org.openjdk.jmh.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!--fastjson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com.alibaba.fastjson.version}</version>
+            </dependency>
+
             <!--lombok-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${org.projectlombok.version}</version>
                 <scope>provided</scope>
+            </dependency>
+
+            <!--rxjava-->
+            <dependency>
+                <groupId>io.reactivex.rxjava2</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${io.reactivex.rxjava2.version}</version>
+            </dependency>
+
+            <!--disruptor-->
+            <dependency>
+                <groupId>com.googlecode.disruptor</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${com.googlecode.disruptor.version}</version>
+            </dependency>
+
+            <!--jctools-->
+            <dependency>
+                <groupId>org.jctools</groupId>
+                <artifactId>jctools-core</artifactId>
+                <version>${org.jctools.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
