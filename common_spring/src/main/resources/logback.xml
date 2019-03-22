@@ -12,7 +12,7 @@
     </appender>
 
     <!--仅记录本工程代码日志-->
-    <logger name="com.qunar.flight.inter.learn" level="debug" additivity="false">
+    <logger name="org.tech.accumulation" level="debug" additivity="false">
         <appender-ref ref="stdout"/>
     </logger>
 

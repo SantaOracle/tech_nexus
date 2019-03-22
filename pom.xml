@@ -22,7 +22,7 @@
         <org.openjdk.jmh.version>1.21</org.openjdk.jmh.version>
         <org.projectlombok.version>1.18.0</org.projectlombok.version>
         <io.reactivex.rxjava2.version>2.2.6</io.reactivex.rxjava2.version>
-        <com.googlecode.disruptor.version>2.10.4</com.googlecode.disruptor.version>
+        <com.lmax.version>3.4.2</com.lmax.version>
         <org.jctools.version>2.1.2</org.jctools.version>
         <com.alibaba.fastjson.version>1.2.56</com.alibaba.fastjson.version>
     </properties>
@@ -122,9 +122,9 @@
 
             <!--disruptor-->
             <dependency>
-                <groupId>com.googlecode.disruptor</groupId>
+                <groupId>com.lmax</groupId>
                 <artifactId>disruptor</artifactId>
-                <version>${com.googlecode.disruptor.version}</version>
+                <version>${com.lmax.version}</version>
             </dependency>
 
             <!--jctools-->
