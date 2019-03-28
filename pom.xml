@@ -25,6 +25,9 @@
         <com.lmax.version>3.4.2</com.lmax.version>
         <org.jctools.version>2.1.2</org.jctools.version>
         <com.alibaba.fastjson.version>1.2.56</com.alibaba.fastjson.version>
+        <checker.version>2.5.8</checker.version>
+        <com.fasterxml.jackson.core.version>2.9.8</com.fasterxml.jackson.core.version>
+        <org.apache.commons.version>3.8.1</org.apache.commons.version>
     </properties>
 
     <dependencyManagement>
@@ -105,6 +108,13 @@
                 <version>${com.alibaba.fastjson.version}</version>
             </dependency>
 
+            <!--apache commons-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${org.apache.commons.version}</version>
+            </dependency>
+
             <!--lombok-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -132,6 +142,30 @@
                 <groupId>org.jctools</groupId>
                 <artifactId>jctools-core</artifactId>
                 <version>${org.jctools.version}</version>
+            </dependency>
+
+            <!--checker-->
+            <dependency>
+                <groupId>org.checkerframework</groupId>
+                <artifactId>checker-qual</artifactId>
+                <version>${checker.version}</version>
+            </dependency>
+
+            <!--jackson-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
