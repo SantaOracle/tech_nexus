@@ -28,6 +28,8 @@
         <checker.version>2.5.8</checker.version>
         <com.fasterxml.jackson.core.version>2.9.8</com.fasterxml.jackson.core.version>
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
+        <org.cache2k.version>1.2.1.Final</org.cache2k.version>
+        <com.github.ben-manes.caffeine.version>2.7.0</com.github.ben-manes.caffeine.version>
     </properties>
 
     <dependencyManagement>
@@ -142,6 +144,20 @@
                 <groupId>org.jctools</groupId>
                 <artifactId>jctools-core</artifactId>
                 <version>${org.jctools.version}</version>
+            </dependency>
+
+            <!--cache2k-->
+            <dependency>
+                <groupId>org.cache2k</groupId>
+                <artifactId>cache2k-all</artifactId>
+                <version>${org.cache2k.version}</version>
+            </dependency>
+
+            <!--caffeine cache-->
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${com.github.ben-manes.caffeine.version}</version>
             </dependency>
 
             <!--checker-->
