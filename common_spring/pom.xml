@@ -125,6 +125,12 @@
             <artifactId>jackson-annotations</artifactId>
         </dependency>
 
+        <!--hessian-->
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+        </dependency>
+
     </dependencies>
 
     
