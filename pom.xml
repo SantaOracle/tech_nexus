@@ -34,6 +34,7 @@
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
         <org.cache2k.version>1.2.1.Final</org.cache2k.version>
         <com.github.ben-manes.caffeine.version>2.7.0</com.github.ben-manes.caffeine.version>
+        <sentinel.framework.version>1.6.3</sentinel.framework.version>
     </properties>
 
     <dependencyManagement>
@@ -192,6 +193,18 @@
                 <groupId>com.caucho</groupId>
                 <artifactId>hessian</artifactId>
                 <version>4.0.62</version>
+            </dependency>
+
+            <!--sentinel-->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-core</artifactId>
+                <version>${sentinel.framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-annotation-aspectj</artifactId>
+                <version>${sentinel.framework.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
