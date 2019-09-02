@@ -10,7 +10,6 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
-@AllArgsConstructor
 @NoArgsConstructor
 public class ReflectBook {
 
@@ -18,6 +17,11 @@ public class ReflectBook {
 
     private String name;
     private String author;
+
+    private ReflectBook(String name, String author) {
+        this.name = name;
+        this.author = author;
+    }
 
     private String declaredMethod(int index) {
         String string = null;

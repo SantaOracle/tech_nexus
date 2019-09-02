@@ -2,6 +2,8 @@ package org.tech.accumulation.demo.java.reflect;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.lang.reflect.Constructor;
+
 /**
  * @author peiheng.jiang create on 2019/8/31
  */
@@ -21,8 +23,21 @@ public class ReflectEntrance {
         }
     }
 
+    public static void reflectPrivateConstructor() {
+        try {
+            Class<?> clazz = Class.forName("org.tech.accumulation.demo.java.reflect.ReflectBook");
+            Constructor<?> constructor = clazz.getDeclaredConstructor(String.class, String.class);
+            constructor.setAccessible(true);
+            ReflectBook book = (ReflectBook) constructor.newInstance("OverWatch", "Blizzard");
+            log.info("Reflect private constructor success, book:{}", book);
+        } catch (Exception e) {
+            log.error("Reflect private constructor failed, e:", e);
+        }
+    }
+
     public static void main(String[] args) {
         reflectNewInstance();
+        reflectPrivateConstructor();
     }
 
 }
