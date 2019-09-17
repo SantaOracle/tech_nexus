@@ -14,6 +14,11 @@ public class ProConPattern {
 
         List<Integer> list = new ArrayList<>();
         new Thread(new ProConPattern.Consumer(list)).start();
+        new Thread(new ProConPattern.Consumer(list)).start();
+        new Thread(new ProConPattern.Consumer(list)).start();
+        new Thread(new ProConPattern.Consumer(list)).start();
+        new Thread(new ProConPattern.Consumer(list)).start();
+
         new Thread(new ProConPattern.Provider(list)).start();
     }
 
@@ -37,7 +42,7 @@ public class ProConPattern {
                         while (list.isEmpty()) {
                             list.wait();
                         }
-                        list.notify();
+                        list.notifyAll();
                         System.out.println("remove " + list.remove(0));
                     }
                 } catch (InterruptedException e) {
@@ -69,7 +74,7 @@ public class ProConPattern {
                         }
                         int i = ThreadLocalRandom.current().nextInt();
                         list.add(i);
-                        list.notify();
+                        list.notifyAll();
                         System.out.println("add " + i);
                         Thread.sleep(1000);
                     }
