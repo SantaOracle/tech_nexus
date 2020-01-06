@@ -36,7 +36,7 @@ public final class JsonUtil {
 
     static {
         // 保证对象版本兼容性，忽略未知属性
-        MAPPER.configure(DeserializationFeature.FAIL_ON_IGNORED_PROPERTIES, false);
+        MAPPER.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         // 序列化时，遇到Empty属性的，不进行序列化
         MAPPER.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
         // 序列化DATE的时候，指定默认序列化格式
