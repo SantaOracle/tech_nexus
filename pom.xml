@@ -28,7 +28,7 @@
         <io.reactivex.rxjava2.version>2.2.6</io.reactivex.rxjava2.version>
         <com.lmax.version>3.4.2</com.lmax.version>
         <org.jctools.version>2.1.2</org.jctools.version>
-        <com.alibaba.fastjson.version>1.2.56</com.alibaba.fastjson.version>
+        <com.alibaba.fastjson.version>1.2.83</com.alibaba.fastjson.version>
         <checker.version>2.5.8</checker.version>
         <com.fasterxml.jackson.core.version>2.9.8</com.fasterxml.jackson.core.version>
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
