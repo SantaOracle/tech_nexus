@@ -35,7 +35,7 @@
         <org.cache2k.version>1.2.1.Final</org.cache2k.version>
         <com.github.ben-manes.caffeine.version>2.7.0</com.github.ben-manes.caffeine.version>
         <sentinel.framework.version>1.6.3</sentinel.framework.version>
-        <org.apache.poi.version>3.17</org.apache.poi.version>
+        <org.apache.poi.version>4.1.1</org.apache.poi.version>
     </properties>
 
     <dependencyManagement>
