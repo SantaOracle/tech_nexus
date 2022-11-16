@@ -30,7 +30,7 @@
         <org.jctools.version>2.1.2</org.jctools.version>
         <com.alibaba.fastjson.version>1.2.56</com.alibaba.fastjson.version>
         <checker.version>2.5.8</checker.version>
-        <com.fasterxml.jackson.core.version>2.9.8</com.fasterxml.jackson.core.version>
+        <com.fasterxml.jackson.core.version>2.12.7.1</com.fasterxml.jackson.core.version>
         <org.apache.commons.version>3.8.1</org.apache.commons.version>
         <org.cache2k.version>1.2.1.Final</org.cache2k.version>
         <com.github.ben-manes.caffeine.version>2.7.0</com.github.ben-manes.caffeine.version>
